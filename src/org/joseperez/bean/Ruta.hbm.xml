@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="org.joseperez.bean.Ruta" table="RUTA">
+
+		<id name="idRuta" type="java.lang.Integer">
+			<column name="IDRUTA" />
+			<generator class="sequence-identity">
+				<param name="sequence">RUTA_SEQ</param>
+			</generator>
+		</id>
+
+		<property name="ruta1" type="java.lang.String">
+			<column name="RUTA1" />
+		</property>
+		<property name="ruta2" type="java.lang.String">
+			<column name="RUTA2" />
+		</property>
+
+	</class>
+</hibernate-mapping>

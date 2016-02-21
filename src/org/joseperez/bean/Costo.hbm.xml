@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="org.joseperez.bean.Costo" table="COSTO">
+	
+	    <id name="idCosto" type="java.lang.Integer">
+            <column name="IDCOSTO" />
+            <generator class="sequence-identity" >
+            	<param name="sequence">COSTO_SEQ</param>
+            </generator>
+        </id>
+        
+        <property name="costoAdicional" type="java.lang.Double">
+            <column name="COSTOADICIONAL" />
+        </property>
+        <property name="envio" type="java.lang.Double">
+            <column name="ENVIO" />
+        </property>
+        <property name="IdProducto" type="java.lang.Integer">
+            <column name="IDPRODUCTO" />
+        </property>
+
+	</class>
+</hibernate-mapping>

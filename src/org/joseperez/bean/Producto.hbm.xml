@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="org.joseperez.bean.Producto" table="PRODUCTO">
+
+		<id name="idProducto" type="java.lang.Integer">
+			<column name="IDPRODUCTO" />
+			<generator class="sequence-identity">
+				<param name="sequence">PRODUCTO_SEQ</param>
+			</generator>
+		</id>
+
+		<property name="nombre" type="java.lang.String">
+			<column name="NOMBRE" />
+		</property>
+		<property name="marca" type="java.lang.String">
+			<column name="MARCA" />
+		</property>
+		<property name="tipo" type="java.lang.String">
+			<column name="TIPO" />
+		</property>
+		<property name="precio" type="java.lang.Double">
+			<column name="PRECIO" />
+		</property>
+
+	</class>
+</hibernate-mapping>
